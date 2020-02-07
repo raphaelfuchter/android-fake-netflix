@@ -13,7 +13,7 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.plexapp.android");
+        Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.valor.mfc.droid.tvapp.generic");
         if (launchIntent != null) {
             startActivity(launchIntent);//null pointer check in case package name was not found
         }
